@@ -1,0 +1,58 @@
+/* menu classes */
+.menu-container {
+  background-color: #282c34;
+  border-bottom: none;
+  padding: 10px 0;
+
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.menu-container .nav-item {
+  text-align: "center";
+}
+
+/* toolbar menu classes */
+.toolbar-menu-container {
+  overflow-y: hidden;
+  max-height: 200px;
+  transition: max-height 700ms ease;
+}
+.toolbar-menu-container.menu-closed {
+  max-height: 0;
+}
+
+/* styling for the dummy menu */
+.toolbar-menu-container .dummy-menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.filter-icon {
+  height: 100px;
+  line-height: 100px;
+  margin: 0 10px;
+  padding: 0 20px;
+  background-color: rgba(255,255,255, 0.5);
+  justify-self:center;
+  text-align: center;
+  width: 200px;
+
+  border-radius: 5px;
+  border: 2px solid white;
+}
+
+
+/* cannot be handled by the CSS inheritance as the ant-menu element is made outside of hierarchy */
+.ant-menu.ant-menu-sub {
+  /* background-color: #282c34; */
+}
+.ant-menu.ant-menu-sub .sub-menu-label {
+  font-size: 18px;
+  color: #000;
+}
+.ant-menu.ant-menu-sub .ant-menu-item.nav-item {
+  display: flex;
+  align-items: center;
+}

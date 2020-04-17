@@ -1,0 +1,31 @@
+.animated-click-container .click-animation {
+  position: absolute;
+
+  border-radius: 25px;
+  border: 1px solid rgba(97, 218, 251, 0.4);
+  background-color: rgba(97, 218, 251, 0.4);
+
+  height: 40px;
+  width: 40px;
+  animation-name: fadeIn;
+  animation-duration: 300ms;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .animated-click-container .click-animation {
+
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
